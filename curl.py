@@ -10,12 +10,9 @@ class CurlCommand(sublime_plugin.WindowCommand):
         url = normalize_url(url)
         filename = get_filename_from_url(url)
         data = get_data_from_url(url)
-        print url
-        print filename
         output = self.window.new_file()
         output.set_name(filename)
         output.set_scratch(True)
-        print dir(output)
         edit = output.begin_edit()
         output.insert(edit, 0, data)
         output.end_edit(edit)
