@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "curl: get file from url"
+    ,   "command": "curl"
+    }
+]
